@@ -1,0 +1,38 @@
+.profile-info__text-about {
+    max-width: 336px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 16px 0 0 0;
+    border: 0;
+    background-color: #000000; 
+    z-index: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+@media screen and (max-width: 1023px) {
+    .profile__info-text-about {
+      font-size: 16px;
+    }
+  }
+  
+@media screen and (max-width: 767px) {
+    .profile__info-text-about {
+      text-align: center;
+    }
+  }
+  
+@media screen and (max-width: 540px) {
+    .profile-info__text-about {
+      width: 100%;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      padding: 14px 0 0 0;
+    }
+  }

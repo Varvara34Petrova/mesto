@@ -1,0 +1,38 @@
+.profile__add-button {
+    max-width: 150px;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    padding: 0 0 0 244px;
+    z-index: 0;
+    border-radius: 2px;
+  }
+
+  .profile__add-button:hover {
+    filter: brightness(60%);
+  }
+ 
+  @media screen and (max-width: 1023px) {
+    .profile__add-button {
+      max-width: 120px;
+      flex-direction: row;
+      padding: 0;
+      align-content: flex-end;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .profile__add-button {
+      max-width: 200px;
+      padding: 40px 0 0 0;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .profile__add-button {
+      max-width: 282px;
+      padding: 36px 0 0 0;
+    }
+  }

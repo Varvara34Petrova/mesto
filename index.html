@@ -1,23 +1,117 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="page/index.css">
-  <link rel="stylesheet" href="./style.css">
-  <title></title>
+  <link rel="stylesheet" href="./page/index.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      
+      <img class="header__logo" src="./images/Vector Header.png" alt="Логотип">
+      <div class="header__line"></div>
     </header>
 
     <main class="content">
-      <section class="profile"></section>
-      <section class="elements"></section>
+      <section class="profile">
+        <div class="profile__avatar">
+          <img class="profile__avatar-image" src="./images/Zhak Iv Kusto.png" alt="Жак Ив Кусто">
+        </div>
+        <div class="profile-info">
+          <div class ="profile-info__main">
+            <p class="profile-info__text-name">Жак-Ив Кусто</p>
+            <button type="button" class="profile-info__edit-button popup_open">
+              <img class="profile-info__edit-button_vector" src="./images/Vector Edit Button.png" alt="Arrow">
+            </button>
+          </div>
+          <p class="profile-info__text-about">Исследователь океана</p>
+        </div>
+        <div class="profile__add-button">
+          <button class="profile__add-button-rectangle">
+            <input type="image" src="./images/Plus.png" alt="plus" class="profile__add-button-vector button"></input>
+          </button>
+        </div>
+      </section>
+
+      <section class="elements">
+        <div class="element">
+          <!-- <div class="element__rectangle"> -->
+            <img class="element__mask-group" src="./images/kirill-pershin-Karachayevsk.png" alt="Карачаевск">
+            <div class="element__group">
+              <h3 class="element__text">Карачаевск</h3>
+              <button class="element__group-heart element__group-heart_active" type="button">
+                <img src="./images/heart-group.png" alt="like" width="22" height="19">
+              </button>
+            </div>
+          <!-- </div> -->
+        </div>
+        <div class="element">
+          <div class="element__rectangle">
+            <img class="element__mask-group" src="./images/kirill-pershin-Mountain Elbrus.png" alt="Гора Эльбрус">
+            <div class="element__group">
+              <h3 class="element__text">Гора Эльбрус</h3>
+              <button class="element__group-heart element__group-heart_active">
+                <img class="element__group-heart_like button" src="./images/heart-group.png" alt="like">
+              </button>
+            </div> 
+          </div>
+        </div>
+        <div class="element">
+          <div class="element__rectangle">
+            <img class="element__mask-group" src="./images/kirill-pershin-Dombai.png" alt="Домбай">
+            <div class="element__group">
+              <h3 class="element__text">Домбай</h3>
+              <button class="element__group-heart element__group-heart_active"><img src="./images/heart-group.png"></button>
+              </div>  
+            </div>
+        </div>
+        <div class="element">
+          <div class="element__rectangle">
+            <img class="element__mask-group" src="./images/kirill-pershin-Mountain Elbrus.png" alt="Гора Эльбрус">
+              <div class="element__group">
+                <h3 class="element__text">Гора Эльбрус</h3>
+                <button class="element__group-heart element__group-heart_active"><img src="./images/heart-group.png"></button>
+              </div> 
+          </div>
+        </div>
+        <div class="element">
+          <div class="element__rectangle">
+            <img class="element__mask-group" src="./images/kirill-pershin-Dombai.png" alt="Домбай">
+              <div class="element__group">
+                <h3 class="element__text">Домбай</h3>
+                <button class="element__group-heart element__group-heart_active"><img src="./images/heart-group.png"></button>
+              </div>  
+          </div>
+        </div>
+        <div class="element">
+          <div class="element__rectangle">
+            <img class="element__mask-group" src="./images/kirill-pershin-Karachayevsk.png" alt="Карачаевск">
+          <div class="element__group">
+            <h3 class="element__text">Карачаево-Черкессия</h3>
+            <div class="element__group-vector">
+              <button class="element__group-heart element__group-heart_active"><img src="./images/heart-group.png"></button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">&copy;&nbsp;2020 Mesto Russia</footer>
-
-  </div>   
+    <div class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close"></button>
+          <h3 class="popup__heading">Редактировать профиль</h3>
+          <form class="popup__field" action="#">
+            <input type="text" class="popup__field popup__field_name" placeholder="Жак-Ив Кусто">
+            <div class="popup__field_line"></div>
+            <input type="text" class="popup__field popup__field_about" placeholder="Исследователь океана">
+            <div class="popup__field_line"></div>
+            <button type="submit" class="submit-button">Сохранить</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="./script/script.js" defer></script> 
 </body>
+</html>

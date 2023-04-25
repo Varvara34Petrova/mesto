@@ -1,0 +1,7 @@
+.popup__field_line {
+    content: '';
+    width: 100%;
+    border: solid 1px #000000;
+    opacity: .2;
+    padding: 0;
+  }

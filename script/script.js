@@ -13,19 +13,14 @@ const buttonSubmit = document.querySelector('.submit-button');
 
 const openPopup = function () {
   console.log('openPopup');
-  popupElement.classList.add('popup_open')
+  popupElement.classList.add('popup_open');
   fieldName.value = textName.textContent
   fieldAbout.value = textAbout.textContent
 }
 
 const closePopup = function () {
   console.log('closePopup');
-  popupElement.classList.remove('popup_open')
-}
-
-const closePopupByClickOnOverlay = function (event) {
-  console.log('target', event.target);
-  console.log('currentTarget', event.currentTarget);
+  popupElement.classList.remove('popup_open');
 }
 
 function handleFormSubmit(evt) {
@@ -37,6 +32,5 @@ function handleFormSubmit(evt) {
 
 popupOpenButtonElement.addEventListener('click', openPopup);
 popupCloseButtonElement.addEventListener('click', closePopup);
-popupElement.addEventListener('click', closePopupByClickOnOverlay);
 formElement.addEventListener('submit', handleFormSubmit);
 buttonSubmit.addEventListener('submit', handleFormSubmit);

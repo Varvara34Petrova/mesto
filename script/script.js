@@ -1,6 +1,6 @@
 const content = document.querySelector('.content');
 const editButton = content.querySelector('.profile-info__edit-button');
-const popupOpenButtonElement = document.querySelector('.popup__open');
+const popupOpenButtonElement = document.querySelector('.profile-info__edit-button_popup-open');
 const popupElement = document.querySelector('.popup');
 const popupContainer = document.querySelector('.popup__container');
 const popupCloseButtonElement = popupElement.querySelector('.popup__close');
@@ -13,14 +13,14 @@ const buttonSubmit = document.querySelector('.submit-button');
 
 const openPopup = function () {
   console.log('openPopup');
-  popupElement.classList.add('popup__open');
+  popupElement.classList.add('profile-info__edit-button_popup-open');
   fieldName.value = textName.textContent
   fieldAbout.value = textAbout.textContent
 }
 
 const closePopup = function () {
   console.log('closePopup');
-  popupElement.classList.remove('popup__open');
+  popupElement.classList.remove('profile-info__edit-button_popup-open');
 }
 
 function handleFormSubmit(evt) {

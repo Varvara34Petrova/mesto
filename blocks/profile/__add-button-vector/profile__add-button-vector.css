@@ -1,5 +1,10 @@
 .profile__add-button-vector {
-    max-width: 22px;
-    user-select: none;
-    z-index: 0;
+  max-width: 22px;
+  user-select: none;
+  z-index: 0;
   }
+@media screen and (max-width: 540px) {
+  .profile__add-button-vector {
+    max-width: 16px;
+  } 
+}

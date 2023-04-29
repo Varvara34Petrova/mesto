@@ -1,0 +1,10 @@
+.element__group-heart_active:focus {
+  background-image: url(../../../../images/black-heart.svg);
+  background-position: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}

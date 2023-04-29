@@ -12,7 +12,7 @@
     background-size: cover;
     -moz-background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../../../images/Close\ Icon.png);
+    background-image: url(../../../images/close-icon.svg);
     background-color: transparent;
     border: none;
   }

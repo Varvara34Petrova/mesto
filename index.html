@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--Здравствуйте! Большое спасибо за быструю проверку работы!-->
+<!DOCTYPE html><!--Здравствуйте! Спасибо за оперативную проверку!!!-->
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./pages/index.css">
   <title>Место</title>
 </head>
-<body class="body"><!--Я думаю, что задавать класс тегу body не совсем правильно. Но без body цвет страницы не полностью окрашен в нужный цвет-->
+<body class="body">
   <div class="page">
     <header class="header">
       <img class="header__logo" src="./images/header-image.svg" alt="Логотип">
@@ -27,7 +27,7 @@
           <p class="profile-info__text-about">Исследователь океана</p>
         </div>
         <button type="button" class="profile__add-button">
-          <img src="./images/plus.svg" alt="Плюс" class="profile__add-button-vector button">
+          <img src="./images/plus.svg" alt="Плюс" class="profile__add-button-vector">
         </button>
       </section>
 
@@ -36,7 +36,7 @@
           <img class="element__mask-group" src="./images/kirill-pershin-karachayevsk.svg" alt="Карачаевск">
           <div class="element__group">
             <h2 class="element__text">Карачаевск</h2>
-            <button class="element__group-heart element__group-heart_active" type="button">
+            <button type="button" class="element__group-heart">
             </button>
           </div>
         </div>
@@ -44,7 +44,7 @@
           <img class="element__mask-group" src="./images/kirill-pershin-elbrus.svg" alt="Гора Эльбрус">
           <div class="element__group">
             <h2 class="element__text">Гора Эльбрус</h2>
-            <button class="element__group-heart element__group-heart_active">
+            <button type="button" class="element__group-heart">
             </button>
           </div> 
         </div>
@@ -52,7 +52,7 @@
           <img class="element__mask-group" src="./images/kirill-pershin-dombai.svg" alt="Домбай">
           <div class="element__group">
             <h2 class="element__text">Домбай</h2>
-            <button class="element__group-heart element__group-heart_active">
+            <button type="button" class="element__group-heart">
             </button>
           </div>  
         </div>
@@ -60,7 +60,7 @@
           <img class="element__mask-group" src="./images/kirill-pershin-elbrus.svg" alt="Гора Эльбрус">
           <div class="element__group">
             <h2 class="element__text">Гора Эльбрус</h2>
-            <button class="element__group-heart element__group-heart_active">
+            <button type="button" class="element__group-heart">
             </button>
           </div> 
         </div>
@@ -68,7 +68,7 @@
           <img class="element__mask-group" src="./images/kirill-pershin-dombai.svg" alt="Домбай">
           <div class="element__group">
             <h2 class="element__text">Домбай</h2>
-            <button class="element__group-heart element__group-heart_active">
+            <button type="button" class="element__group-heart">
             </button>
           </div>  
         </div>
@@ -76,7 +76,7 @@
           <img class="element__mask-group" src="./images/kirill-pershin-karachayevsk.svg" alt="Карачаевск">
           <div class="element__group">
             <h2 class="element__text">Карачаево-Черкессия</h2>
-              <button class="element__group-heart element__group-heart_active">
+              <button type="button" class="element__group-heart">
               </button>
           </div>
         </div>
@@ -89,7 +89,7 @@
       <div class="popup__container">
         <button type="button" class="popup__close"></button>
         <h3 class="popup__heading">Редактировать профиль</h3>
-        <form class="popup__field" action="#" id="popup__field">
+        <form class="popup__field" action="#" name="form">
           <input type="text" class="popup__info popup__info_type_name" name="name" placeholder="Имя">
           <input type="text" class="popup__info popup__info_type_about" name="about" placeholder="О себе">
           <button type="submit" class="popup__submit-button">Сохранить</button>

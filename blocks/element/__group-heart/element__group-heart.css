@@ -12,6 +12,7 @@
   align-items: flex-end;
   justify-self: center;
   background-image: url(../../../images/heart-group.svg);
+  flex-shrink: 0;
   }
 
 .element__group-heart:hover {
